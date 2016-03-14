@@ -60,7 +60,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>RECARGAS</h1>
+                    <h1>Recargas</h1>
 
 
                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
@@ -140,22 +140,36 @@ $("#menu-toggle").click(function(e) {
 
 
                 <div class="input-group col-md-6">
-                    <label  for="descripcion">Descripcion</label>
-                    <input type="text" class="form-control" id="desc" placeholder="Galletas" >
+                    <label  for="descripcion">Compañia</label>
+                    <select class="form-control">
+  <option>TELCEL</option>
+  <option>MOVISTAR</option>
+  <option>USACELL</option>
+  <option>UNEFON</option>
+  
+</select>
                 </div>
                 <div class="input-group col-md-6">
-                    <label for="precio" >Precio compra</label>
-                    <input type="number" class="form-control" id="precom" placeholder="8.00" >
+                    <label for="precio" >Precio</label>
+                   <select class="form-control">
+  <option>20</option>
+  <option>50</option>
+  <option>100</option>
+  <option>200</option>
+    <option>300</option>
+      <option>400</option>
+        <option>500</option>
+</select>
                 </div>
                 <div class="input-group col-md-6">
-                    <label for="precio" >Precio venta</label>
-                    <input type="number" class="form-control" id="prec" placeholder="19.49" >
+                    <label for="precio" >Numero de telefono</label>
+                    <input type="number" class="form-control" id="prec" placeholder="2229876546" >
                 </div>
 
 
                 <div class="input-group col-md-6">
-                    <label  for="cantidad">Cantidad</label>
-                    <input type="number" class="form-control" id="cant" placeholder="10" >
+                    <label  for="cantidad">Confirmar</label>
+                    <input type="number" class="form-control" id="cant" placeholder="2229876546" >
                 </div>
                 <br>
                 <br>

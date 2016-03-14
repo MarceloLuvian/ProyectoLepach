@@ -6,6 +6,7 @@
  
     <script src="assets/js/jquery.js"></script>
   	<script src="assets/js/reportespdf/funcionesreportes.js"></script>
+    
   
 <!DOCTYPE html>
 <html lang="es">
@@ -61,9 +62,28 @@
                         <h1>Reportes</h1>
 
 
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default pull-left" id="menu-toggle">Menu</a>
+                       
+                           <a class="btn btn-danger " href="#" >Generar PDF</a>
+                         <a class="btn btn-primary " href="#" >Generar reporte</a>
+                                                          
+                                  <div class="col-sm-4 col-xs-4">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">Fecha de inicio: </span>
+                                    <input type="date" name="fecha" id="input" class="form-control" required>
+                                    <span class="input-group-addon"> </span>
+                                    </div>                                  
+                                  </div>
 
-                         <a class="btn btn-primary pull-right" href="#" >Generar reporte</a>
+                                   <div class="col-sm-4 col-xs-4">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">Fecha de corte: </span>
+                                    <input type="date" name="fecha" id="input" class="form-control" required>
+                                     <span class="input-group-addon"> </span>
+                                    </div>   
+
+                                  </div>
+                              
                     </div>
 
                 </div>

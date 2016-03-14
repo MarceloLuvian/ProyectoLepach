@@ -62,7 +62,7 @@
 
 
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
-                         <a class="btn btn-primary pull-right" href="#" >Nuevo usuario</a>
+                         <a class="btn btn-primary pull-right" href='#modal2' data-uk-modal >Nuevo usuario</a>
                     </div>
 
                 </div>
@@ -87,9 +87,9 @@
 			<td> {{ $user->email }} </td>
 			
 		
-		<td> <input type="hidden" name="_token" id="token">
+		<!-- <td> <input type="hidden" name="_token" id="token">
 				<a  href="#" onclick="mostrarcontra('{!! $user->id !!}')"  > <span class="glyphicon glyphicon-eye-open"></span> </a>
-		</td>
+		</td> -->
 			<input type="hidden" name="_token" value="{{ CSRF_TOKEN() }}" id="token">
 			<td> <a  href="{!! route('usuarios.index') !!}" onclick="eliminar('{!! $user->id !!}')" value="{{ CSRF_TOKEN() }}"> <span class="glyphicon glyphicon-trash"></span> </a></td>
 		</tr>
@@ -128,12 +128,7 @@
     });
     </script>
    
-<div class="container">
-	<div align="center">
-		<input  width="50" align="center" type="text" id="contra">
-	</div>
 
-</div>
 
 
 
@@ -141,5 +136,54 @@
 
 </html>
 
+<div id="modal2" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <h2>Nuevo Usuario</h2>
+        <br>
+        <div class="container">
+            <div class=" col-md-4" >
+        
+ 
 
+
+ 
+                <div class="panel-body">
+                    {!! Form::open(['route' => 'auth/register', 'class' => 'form']) !!}
+
+                        <div class="form-group">
+                            <label>{{ trans('form.label.name') }}</label>
+                            {!! Form::input('text', 'name', '', ['class'=> 'form-control']) !!}
+                        </div>
+                        <div class="form-group">
+                            <label>{{ trans('form.label.email') }}</label>
+                            {!! Form::email('email', '', ['class'=> 'form-control']) !!}
+                        </div>
+                        <div class="form-group">
+                            <label>{{ trans('form.label.password') }}</label>
+                            {!! Form::password('password', ['class'=> 'form-control']) !!}
+                        </div>
+
+                        <div class="form-group">
+                            <label>{{ trans('form.label.password_confirmation') }}</label>
+                            {!! Form::password('password_confirmation', ['class'=> 'form-control']) !!}
+                        </div>
+
+                        <div>
+                            {!! Form::submit(trans('form.signup.submit'),['class' => 'btn btn-primary']) !!}
+                        </div>
+                    {!! Form::close() !!}
+                </div>
+         
+
+
+
+
+
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
 @endsection
