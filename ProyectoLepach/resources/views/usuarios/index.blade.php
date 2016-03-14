@@ -44,10 +44,10 @@
                     <a href="{{ route('copias.index') }}"><span class="glyphicon glyphicon-file"></span>  Control de copias</a>
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-book"></span>   Reportes</a>
+                    <a href="{{ route('reportes.index') }}"><span class="glyphicon glyphicon-book"></span>   Reportes</a>
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-repeat"></span>  Control de recargas</a>
+                    <a href="{{ route('recargas.index') }}"><span class="glyphicon glyphicon-repeat"></span>  Control de recargas</a>
                 </li>
             </ul>
         </div>
@@ -61,7 +61,7 @@
                         <h1>Usuarios</h1>
 
 
-                        <a href="#menu-toggle" class="btn btn-warning" id="menu-toggle">Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
                          <a class="btn btn-primary pull-right" href="#" >Nuevo usuario</a>
                     </div>
 

@@ -33,7 +33,7 @@
 
   	$tabla = $tabla." <div class='uk-overflow-container'>
       
-     <table class='uk-table uk-table-hover uk-table-striped  uk-table-condensed'>
+     <table class='uk-table uk-table-hover   uk-table-condensed'>
 			            <tr>
 			                
 			                <th >Descripcion</th>                      

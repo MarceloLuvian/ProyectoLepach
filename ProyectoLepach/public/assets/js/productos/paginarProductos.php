@@ -31,7 +31,7 @@
   	$registro = mysqli_query($connect,"SELECT *FROM producto limit ".$limit.", ".$nroLotes."  ");
 
 
-  	$tabla = $tabla."<table class='uk-table uk-table-hover uk-table-striped uk-table-condensed'>
+  	$tabla = $tabla."<table class='uk-table uk-table-hover  uk-table-condensed'>
 			            <tr>
 			                <th>Fecha </th>
 			                <th >Descripcion</th>

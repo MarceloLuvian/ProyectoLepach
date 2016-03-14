@@ -50,6 +50,10 @@ Route::resource('copias','copiasController');
 
 Route::resource('usuarios','usuariosController');
 
+Route::resource('recargas','recargasController');
+
+Route::resource('reportes','reportesController');
+
 Route::get ('desencripta/{id}', ['as' => 'desencripta/{id}', 'uses' => 'usuariosController@desencriptar'] );
 
 Route::get ('decript/{arreglo}', ['as' => 'decript/{arreglo}', 'uses' => 'usuariosController@desencript'] );

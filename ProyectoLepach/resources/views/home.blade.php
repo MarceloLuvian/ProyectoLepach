@@ -39,16 +39,16 @@
                     <a href="{{ route('ventas.index') }}"> <span class="glyphicon glyphicon-inbox"></span>   Ventas</a>
                 </li>
                 <li>
-                    <a href="#"> <span class="glyphicon glyphicon-user"></span>   Usuarios</a>
+                    <a href="{{ route('usuarios.index') }}"> <span class="glyphicon glyphicon-user"></span>   Usuarios</a>
                 </li>
                 <li>
                     <a href="{{ route('copias.index') }}"><span class="glyphicon glyphicon-file"></span>  Control de copias</a>
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-book"></span>   Reportes</a>
+                    <a href="{{ route('reportes.index') }}"><span class="glyphicon glyphicon-book"></span>   Reportes</a>
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-repeat"></span>  Control de recargas</a>
+                    <a href="{{ route('recargas.index') }}"><span class="glyphicon glyphicon-repeat"></span>  Control de recargas</a>
                 </li>
             </ul>
         </div>

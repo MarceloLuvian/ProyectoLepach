@@ -46,10 +46,10 @@
                     <a href="{{ route('copias.index') }}"><span class="glyphicon glyphicon-file"></span>  Control de copias</a>
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-book"></span>   Reportes</a>
+                    <a href="{{ route('reportes.index') }}"><span class="glyphicon glyphicon-book"></span>   Reportes</a>
                 </li>
                 <li>
-                    <a href="#"><span class="glyphicon glyphicon-repeat"></span>  Control de recargas</a>
+                    <a href="{{ route('recargas.index') }}"><span class="glyphicon glyphicon-repeat"></span>  Control de recargas</a>
                 </li>
             </ul>
         </div>
@@ -62,9 +62,9 @@
                     <div class="col-lg-12">
                       
 									
-								  <h2>Ventas</h2>
+								  <h1>Ventas</h1>
 								  <img src="assets/lepach.jpg">
-                        <a href="#menu-toggle" class="btn btn-warning" id="menu-toggle">Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
                       
                    
                         <input class="pull-right" type="number" name="pago" id="pago" placeholder="Monto de pago">
@@ -79,41 +79,61 @@
                    <br>
 <!-- Contenido y funciones -->
 
-    
+      <div class="row">
 
-<div class="container " >
+                <div class="col-md-12">
+                    <div class="col-md-8">
 
-<div class="uk-grid">
+                        <div class="panel panel-info">
+                            <div class="panel-heading"> <strong>PRODUCTOS</strong></div>
+                            <div class="panel-body">
+                                <div class="">
+                                   <div class="registros" id="agrega-registros"></div>
+                                   <center>
+                                    <ul class="pagination" id="pagination"></ul>
+                                </center>
 
-		  <div class="uk-width-medium-1 uk-width-small-1 uk-width-large-1-2">
-		  		<div class="well">
-    	<div class="registros" id="agrega-registros"></div>
-    <center>
-        <ul class="pagination" id="pagination"></ul>
-    </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
 
+                    <div class="panel panel-info">
+                          <div class="panel-heading"><strong>PRODUCTOS AGREGADOS</strong></div>
+                      <div class="panel-body">
+                        
+                         <div  id="carrito">
+                    </div>
+                </div>
+            </div>
+             <div class="panel panel-info pull-right">
+                            <div class="panel-heading"> <strong>CAMBIO</strong></div>
+                            <div class="panel-body" id="pruebas">
+                              
+                        </div>
+                    </div>
+          
     </div>
-	</div>
-  
 
-    <div class="uk-width-medium-1 uk-width-small-1 uk-width-large-1-3">
-  <h2>Productos agregados</h2>
-    	<div class="well" id="carrito">
-    		
-    	</div>
-    	<div id="pruebas" class="well pull-right">Cambio</div>
-    </div>
+</div>
+
+
  
 </div>
 
 </div>
 
 
-
+ 
 
       </div>
-        </div>        
-  		  </div>
+      
+      
+            
+        </div>
+
+      
 
 
     <!-- /#wrapper -->

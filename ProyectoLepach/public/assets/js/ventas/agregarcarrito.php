@@ -13,7 +13,7 @@ if($respuesta){
 	$producto = mysqli_query($connect, "SELECT descripcion, precio, id_carrito ,id_producto from producto inner join carrito on producto.id = carrito.id_producto");
 
 echo "<div class='uk-overflow-container'>";
-echo "<table class='uk-table uk-table-hover uk-table-striped uk-table-condensed'>";
+echo "<table class='uk-table uk-table-hover  uk-table-condensed'>";
 echo "<tr> <th> Descripcion </th> <th> Precio </th>  <th> Acciones </th> </tr>";
 
 

@@ -8,14 +8,3 @@ function mostrarcontra(id){
 	});
 
 }
-
-function mostrarcon(arreglo){
-
-	var route2 = "http://localhost:8000/decript/"+arreglo;
-
-	$.get(route2, function(res2){
-
-		$('#desencriptacion').val(res2);
-	});
-
-}
